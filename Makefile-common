@@ -78,7 +78,7 @@ $(OBJ): $(filter-out %.P,$(MAKEFILE_LIST))
 # Auto-depends extension
 df = $(@:.o=)
 define CCPOST
-	cp $(df).d $(df).P; \
+	copy $(df).d $(df).P; \
 	sed -e 's/#.*//' -e 's/^[^:]*: *//' -e 's/ *\\$$//' \
 	  -e '/^$$/ d' -e 's/$$/ :/' < $(df).d >> $(df).P; \
 	rm -f $(df).d
@@ -122,7 +122,7 @@ regressiontests:
 	if [ -e thermistortable.h -a ! -e thermistortable.h.aside ]; then \
 		mv thermistortable.h thermistortable.h.aside; \
 	fi
-	cp testcases/thermistortable.regtest.h thermistortable.h
+	copy testcases/thermistortable.regtest.h thermistortable.h
 	# Generic Gen7 configuration.
 	$(MAKE) -f Makefile-AVR USER_CONFIG=testcases/config.regtest-gen7-avr.h \
 	  MCU=atmega644 F_CPU=20000000UL EXTRA_CFLAGS=-Werror all
