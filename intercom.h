@@ -15,9 +15,9 @@
 #endif
 
 /// list of error codes, not many so far...
-enum {
-	ERROR_BAD_CRC
-} err_codes;
+// enum {
+// 	ERROR_BAD_CRC
+// } err_codes;
 
 /** \brief intercom packet structure, both tx and rx
 */

@@ -281,7 +281,7 @@ DEFINE_HEATER(bed,      PIO1_9,  1,      10,        100)
   sending G-code files with a plain terminal emulator, like GtkTerm (Linux),
   CoolTerm (Mac) or HyperTerminal (Windows).
 */
-//#define XONXOFF
+// #define XONXOFF
 
 /** \def USB_SERIAL
   Define this for using USB instead of the serial RS232 protocol. Works on
