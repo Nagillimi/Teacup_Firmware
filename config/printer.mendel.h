@@ -49,9 +49,9 @@
   Used when doing precision endstop search and as default feedrate. No
   SEARCH_FEEDRATE_E, as E can't be searched.
 */
-#define SEARCH_FEEDRATE_X        200
-#define SEARCH_FEEDRATE_Y        200
-#define SEARCH_FEEDRATE_Z        50
+#define SEARCH_FEEDRATE_X        1000 //200
+#define SEARCH_FEEDRATE_Y        1000 //200
+#define SEARCH_FEEDRATE_Z        100  //50
 
 /** \def ENDSTOP_CLEARANCE_X ENDSTOP_CLEARANCE_Y ENDSTOP_CLEARANCE_Z
 
